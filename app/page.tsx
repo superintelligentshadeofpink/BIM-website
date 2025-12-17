@@ -287,7 +287,7 @@ export default function Landing() {
               </p>
             </div>
 
-            <p className="font-roboto text-[16px] text-[#888888] leading-[1.7] w-full md:w-[457px]">
+            <p className="font-roboto text-[16px] text-[#888888] leading-[1.7] w-full md:w-[457px] mt-[20px] md:mt-[60px]">
               Begin your easy and relaxing manifestation process today by downloading the Manifest369 app from the app store. Supercharge your practice with daily tracking and reminder notifications in the premium version.
             </p>
             
