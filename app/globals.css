@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Codystar&family=Darker+Grotesque:wght@500;600;800&family=Gloria+Hallelujah&family=Roboto:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom font classes */
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-darker-grotesque {
+  font-family: 'Darker Grotesque', sans-serif;
+}
+
+.font-codystar {
+  font-family: 'Codystar', cursive;
+}
+
+.font-gloria {
+  font-family: 'Gloria Hallelujah', cursive;
+}
