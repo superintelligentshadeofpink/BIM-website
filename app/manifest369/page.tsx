@@ -62,7 +62,7 @@ export default function Manifest369Support() {
           
           {/* Desktop Navigation - hidden on mobile */}
           <div className="hidden md:flex items-center gap-[30px] ml-auto">
-            <a href="/support" className="font-roboto text-[16px] text-white">Support</a>
+            <a href="/manifest369" className="font-roboto text-[16px] text-white">Support</a>
             {/* TODO - Make this image an icon instead 
             <img src={imgEllipse7} alt="" className="w-[4px] h-[4px]" />
             <span className="font-roboto text-[16px] text-white">Download on the app store</span> */}
@@ -117,7 +117,7 @@ export default function Manifest369Support() {
               {/* Navigation Links */}
               <div className="flex flex-col gap-6">
                 <a
-                  href="/support"
+                  href="/manifest369"
                   className="font-roboto text-[16px] text-black hover:text-[#ff31d2] transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
