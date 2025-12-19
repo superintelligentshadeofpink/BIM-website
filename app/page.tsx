@@ -347,7 +347,7 @@ export default function Landing() {
         </div>
       </section>
       
-      
+      {/* Footer */}
       <footer className="mx-auto max-w-[1920px] w-full h-[546px] mt-[80px] relative">
         <img src="images/footer-bg.png" alt="" className="absolute left-0 top-0 max-w-[1920px] w-full h-[546px] object-cover" />
         
@@ -356,9 +356,8 @@ export default function Landing() {
         </p>
         
         <div className="absolute left-1/2 -translate-x-1/2 top-[388px] flex items-center gap-[30px]">
-          <span className="font-roboto text-[16px] text-white">Support</span>
-          {/* <img src={imgEllipse7} alt="" className="w-[4px] h-[4px]" />
-          <span className="font-roboto text-[16px] text-white">Download in the App Store</span> */}
+          <a href="/manifest369" className="font-roboto text-[16px] text-white">Support</a>
+          <a href="/privacy" className="font-roboto text-[16px] text-white">Privacy</a>
         </div>
         
         <p className="hidden md:block absolute left-1/2 -translate-x-1/2 top-[499px] font-roboto text-[14px] text-[#b3b1b7]">

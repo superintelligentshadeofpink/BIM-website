@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-export default function Manifest369Support() {
+export default function PrivacyPolicy() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <div className="w-full max-w-[1920px] min-h-screen bg-white relative mx-auto overflow-x-hidden">
@@ -19,7 +19,7 @@ export default function Manifest369Support() {
           
           {/* Page Title */}
           <h1 className="absolute capitalize font-darker-grotesque font-semibold text-[32px] sm:text-[40px] md:text-[60px] text-white left-1/2 -translate-x-1/2 md:left-[200px] md:translate-x-0 top-[150px] sm:top-[180px] md:top-[209px] leading-none text-center md:text-left px-4">
-            manifest369 Support
+            Privacy Policy
           </h1>
         </div>
 
@@ -63,9 +63,6 @@ export default function Manifest369Support() {
           {/* Desktop Navigation - hidden on mobile */}
           <div className="hidden md:flex items-center gap-[30px] ml-auto">
             <a href="/manifest369" className="font-roboto text-[16px] text-white">Support</a>
-            {/* TODO - Make this image an icon instead 
-            <img src={imgEllipse7} alt="" className="w-[4px] h-[4px]" />
-            <span className="font-roboto text-[16px] text-white">Download on the app store</span> */}
           </div>
 
           {/* Mobile Menu Overlay */}
@@ -123,6 +120,13 @@ export default function Manifest369Support() {
                 >
                   Support
                 </a>
+                <a
+                  href="/privacy"
+                  className="font-roboto text-[16px] text-black hover:text-[#ff31d2] transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Privacy
+                </a>
               </div>
             </div>
           </div>
@@ -132,174 +136,158 @@ export default function Manifest369Support() {
       {/* Main Content */}
       <main className="w-full max-w-[1920px] min-h-screen bg-white relative mx-auto overflow-x-hidden">
 
-        {/* Contact Information */}
+        {/* Introduction */}
         <section className="mt-10 ml-[34px]">
           <h2 className="capitalize font-darker-grotesque font-semibold text-[36px] text-black mb-6 leading-none">
-            Contact Information
+            Introduction
           </h2>
           <div className="font-roboto font-normal text-[#888888] text-[16px] leading-relaxed max-w-[828px]">
-            <p className="mb-2">SUPPORT CONTACT</p>
-            <p className="mb-2">Email: support@boldinmagenta.com</p>
-            <p className="mb-2">Response Time: Within 24-48 hours</p>
-            <p className="mt-4">For urgent issues, please email with "URGENT" in the subject line.</p>
+            <p className="mb-2">Last Updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+            <p className="mb-2">Boldin Magenta ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use the Manifest369 application (the "App").</p>
+            <p className="mt-4">By using the App, you agree to the collection and use of information in accordance with this policy.</p>
           </div>
         </section>
 
-        {/* Getting Started */}
+        {/* Information We Collect */}
         <section className="mt-20 ml-[34px]">
           <h2 className="capitalize font-darker-grotesque font-semibold text-[36px] text-black mb-6 leading-none">
-            Getting Started
+            Information We Collect
           </h2>
           <div className="font-roboto font-normal text-[#888888] text-[16px] leading-relaxed max-w-[828px]">
-            <p className="mb-2">HOW TO USE MANIFEST369</p>
-            <p className="mb-2">Step 1: Write your desire in the present tense 3 times.</p>
-            <p className="mb-2">Step 2: Write your intended action 6 times</p>
-            <p className="mb-2">Step 3: Write how you feel when your desire is achieved 9 times</p>
-            <p className="mt-4">Tip: Write in present tense as if it's already happening Example: "I am grateful for my successful business"</p>
+            <p className="mb-2">DATA COLLECTED</p>
+            <p className="mb-2">The Manifest369 App is designed with privacy in mind. We collect minimal data necessary for the App's functionality:</p>
+            
+            <p className="mt-4 mb-1">• Daily Completion Status: We store only whether or not you completed your Manifestation practice each day. This data is used solely to track your daily progress and provide you with completion statistics.</p>
+            
+            <p className="mt-4 mb-1">• Content Not Stored: We do not store, collect, or transmit any of the content you enter during your Manifestation practice. This includes:</p>
+            <p className="mb-1">  - The text you write in Step 1 (3 times)</p>
+            <p className="mb-1">  - The text you write in Step 2 (6 times)</p>
+            <p className="mb-2">  - The text you write in Step 3 (9 times)</p>
+            
+            <p className="mt-4 mb-1">• Device Information: The App may collect basic device information necessary for functionality, such as device type and operating system version, which is standard for mobile applications.</p>
+            
+            <p className="mt-4">• Subscription Information: If you purchase a Premium subscription, payment information is processed through Apple's App Store, and we do not have access to your payment details.</p>
           </div>
         </section>
 
-        {/* FAQs */}
+        {/* How We Use Information */}
         <section className="mt-20 ml-[34px]">
           <h2 className="capitalize font-darker-grotesque font-semibold text-[36px] text-black mb-6 leading-none">
-            Frequently Asked Questions
-          </h2>
-          <div className="font-roboto font-normal text-[#888888] text-[16px] leading-relaxed max-w-[828px] space-y-4">
-            <div>
-              <p className="mb-1">Q: What is the 3-6-9 method?</p>
-              <p className="mb-1">A: A structured journaling practice where you write your desire 3 times, your intention 6 times, and</p>
-              <p>how you feel after you have a achieved your desire 9 times.</p>
-            </div>
-            
-            <div className="mt-4">
-              <p className="mb-1">Q: Do I need Premium to use the app?</p>
-              <p>A: No. All core journaling features are free. Premium adds tracking, reminders, and removes ads.</p>
-            </div>
-            
-            <div className="mt-4">
-              <p className="mb-1">Q: How do subscriptions work?</p>
-              <p>A: Premium is $4.99 USD/year, billed annually through your iTunes account. Cancel anytime in Settings.</p>
-            </div>
-            
-            <div className="mt-4">
-              <p className="mb-1">Q: Will this guarantee my goals come true?</p>
-              <p>A: Manifest369 is a journaling tool for focus and consistency. Results depend on your actions and commitment.</p>
-            </div>
-            
-            <div className="mt-4">
-              <p className="mb-1">Q: Where is my data stored?</p>
-              <p>A: Your journal entries are not stored after entering. Your daily tracking is stored locally on your phone.</p>
-            </div>
-            
-            <div className="mt-4">
-              <p className="mb-1">Q: How do I cancel my subscription?</p>
-              <p>A: Open iPhone Settings → Your Name → Subscriptions → Manifest369 → Cancel Subscription</p>
-            </div>
-            
-            <div className="mt-4">
-              <p className="mb-1">Q: How do I restore my Premium purchase?</p>
-              <p>A: Settings → Go Premium → Restore Previous Purchase</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Troubleshooting */}
-        <section className="mt-20 ml-[34px]">
-          <h2 className="capitalize font-darker-grotesque font-semibold text-[36px] text-black mb-6 leading-none">
-            Troubleshooting
+            How We Use Information
           </h2>
           <div className="font-roboto font-normal text-[#888888] text-[16px] leading-relaxed max-w-[828px]">
-            <p className="mb-2">COMMON ISSUES</p>
+            <p className="mb-2">USE OF DATA</p>
+            <p className="mb-2">The limited data we collect is used exclusively for the following purposes:</p>
             
-            <div className="mt-4">
-              <p className="mb-1">Music not playing:</p>
-              <p className="mb-1">- Check device volume</p>
-              <p className="mb-1">- Ensure silent mode is off</p>
-              <p className="mb-2">- Restart the app</p>
-            </div>
-            
-            <div className="mt-4">
-              <p className="mb-1">Ads not loading:</p>
-              <p className="mb-1">- Check internet connection</p>
-              <p className="mb-2">- This is normal behaviour for Premium subscribers</p>
-            </div>
-            
-            <div className="mt-4">
-              <p className="mb-1">Premium features not unlocking:</p>
-              <p className="mb-1">- Tap "Restore Previous Purchase" in subscription screen</p>
-              <p className="mb-2">- Ensure you're signed in with same Apple ID</p>
-            </div>
-            
-            <div className="mt-4">
-              <p className="mb-1">App crashes:</p>
-              <p className="mb-1">- Update to latest iOS version</p>
-              <p className="mb-1">- Reinstall the app</p>
-              <p>- Contact support if issue persists</p>
-            </div>
+            <p className="mt-4 mb-1">• To track your daily Manifestation completion status</p>
+            <p className="mb-1">• To provide you with progress statistics and completion history</p>
+            <p className="mb-1">• To enable Premium features such as tracking and reminders</p>
+            <p className="mb-1">• To improve the App's functionality and user experience</p>
+            <p className="mt-4">We do not use your data for advertising, marketing, or any other commercial purposes. We do not sell, rent, or share your data with third parties.</p>
           </div>
         </section>
 
-        {/* Premium Features */}
+        {/* Data Storage */}
         <section className="mt-20 ml-[34px]">
           <h2 className="capitalize font-darker-grotesque font-semibold text-[36px] text-black mb-6 leading-none">
-            Premium Features
+            Data Storage
           </h2>
           <div className="font-roboto font-normal text-[#888888] text-[16px] leading-relaxed max-w-[828px]">
-            <p className="mb-2">PREMIUM SUBSCRIPTION</p>
+            <p className="mb-2">WHERE YOUR DATA IS STORED</p>
+            <p className="mb-2">Your daily completion tracking data is stored locally on your device. This means:</p>
             
-            <p className="mt-4 mb-1">What's Included:</p>
-            <p className="mb-1">✓ Daily completion tracking</p>
-            <p className="mb-1">✓ Reminder notifications</p>
-            <p className="mb-2">✓ Ad-free experience</p>
-            
-            <p className="mt-4 mb-1">Price: $4.99 USD/year</p>
-            <p className="mb-1">Payment: Charged to iTunes Account</p>
-            <p className="mb-1">Auto-Renewal: Yes, cancel anytime</p>
-            <p>Free Trial: Not currently offered</p>
+            <p className="mt-4 mb-1">• Your data remains on your device and is not transmitted to our servers</p>
+            <p className="mb-1">• Your Manifestation content is never stored, either locally or remotely</p>
+            <p className="mb-1">• If you delete the App, all locally stored data will be removed</p>
+            <p className="mt-4">We do not maintain any central database of user data or content.</p>
           </div>
         </section>
 
-        {/* Feature Requests */}
+        {/* Data Security */}
         <section className="mt-20 ml-[34px]">
           <h2 className="capitalize font-darker-grotesque font-semibold text-[36px] text-black mb-6 leading-none">
-            Feature Requests
+            Data Security
           </h2>
           <div className="font-roboto font-normal text-[#888888] text-[16px] leading-relaxed max-w-[828px]">
-            <p className="mb-2">SUGGEST A FEATURE</p>
-            <p className="mt-4 mb-2">We love hearing from users!</p>
-            <p>Send feature requests to: feedback@boldinmagenta.com</p>
+            <p className="mb-2">PROTECTING YOUR INFORMATION</p>
+            <p className="mb-2">We take the security of your information seriously:</p>
+            
+            <p className="mt-4 mb-1">• Data is stored locally on your device using standard iOS security measures</p>
+            <p className="mb-1">• We do not transmit your Manifestation content over the internet</p>
+            <p className="mb-1">• We implement appropriate technical measures to protect any data we do collect</p>
+            <p className="mt-4">However, no method of transmission over the internet or electronic storage is 100% secure. While we strive to protect your data, we cannot guarantee absolute security.</p>
           </div>
         </section>
 
-        {/* Privacy */}
+        {/* Third-Party Services */}
         <section className="mt-20 ml-[34px]">
           <h2 className="capitalize font-darker-grotesque font-semibold text-[36px] text-black mb-6 leading-none">
-            Privacy
+            Third-Party Services
           </h2>
           <div className="font-roboto font-normal text-[#888888] text-[16px] leading-relaxed max-w-[828px]">
-            <p className="mb-2">Your privacy matters:</p>
-            <p className="mb-1">- Journal entries are not stored</p>
-            <p className="mb-1">- No data collection or sharing</p>
-            <p className="mb-1">- No third-party analytics</p>
-            <p>- No account registration required</p>
+            <p className="mb-2">EXTERNAL SERVICES</p>
+            <p className="mb-2">The App may use the following third-party services:</p>
+            
+            <p className="mt-4 mb-1">• Apple App Store: For processing Premium subscription payments. Apple's privacy policy applies to payment transactions.</p>
+            <p className="mb-1">• Apple iCloud: If you enable iCloud backup, your device data may be backed up to iCloud according to Apple's terms and privacy policy.</p>
+            <p className="mt-4">We do not use third-party analytics, advertising networks, or data brokers. We do not share your data with any third parties for marketing or advertising purposes.</p>
           </div>
         </section>
 
-        {/* Version Information */}
+        {/* Your Rights */}
+        <section className="mt-20 ml-[34px]">
+          <h2 className="capitalize font-darker-grotesque font-semibold text-[36px] text-black mb-6 leading-none">
+            Your Rights
+          </h2>
+          <div className="font-roboto font-normal text-[#888888] text-[16px] leading-relaxed max-w-[828px]">
+            <p className="mb-2">YOUR PRIVACY RIGHTS</p>
+            <p className="mb-2">You have the following rights regarding your data:</p>
+            
+            <p className="mt-4 mb-1">• Access: You can view your completion tracking data within the App</p>
+            <p className="mb-1">• Deletion: You can delete all your data by uninstalling the App from your device</p>
+            <p className="mb-1">• No Account Required: Since we don't require account registration, you maintain full control over your data</p>
+            <p className="mt-4">If you have questions about your rights or wish to exercise them, please contact us at the email address provided below.</p>
+          </div>
+        </section>
+
+        {/* Children's Privacy */}
+        <section className="mt-20 ml-[34px]">
+          <h2 className="capitalize font-darker-grotesque font-semibold text-[36px] text-black mb-6 leading-none">
+            Children's Privacy
+          </h2>
+          <div className="font-roboto font-normal text-[#888888] text-[16px] leading-relaxed max-w-[828px]">
+            <p className="mb-2">PROTECTING MINORS</p>
+            <p className="mb-2">The App is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13.</p>
+            <p className="mt-4">If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately so we can delete such information.</p>
+          </div>
+        </section>
+
+        {/* Changes to This Policy */}
+        <section className="mt-20 ml-[34px]">
+          <h2 className="capitalize font-darker-grotesque font-semibold text-[36px] text-black mb-6 leading-none">
+            Changes to This Policy
+          </h2>
+          <div className="font-roboto font-normal text-[#888888] text-[16px] leading-relaxed max-w-[828px]">
+            <p className="mb-2">UPDATES TO PRIVACY POLICY</p>
+            <p className="mb-2">We may update this Privacy Policy from time to time. We will notify you of any changes by:</p>
+            
+            <p className="mt-4 mb-1">• Posting the new Privacy Policy on this page</p>
+            <p className="mb-1">• Updating the "Last Updated" date at the top of this policy</p>
+            <p className="mt-4">You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+          </div>
+        </section>
+
+        {/* Contact Us */}
         <section className="mt-20 ml-[34px] mb-40">
           <h2 className="capitalize font-darker-grotesque font-semibold text-[36px] text-black mb-6 leading-none">
-            Version Information
+            Contact Us
           </h2>
           <div className="font-roboto font-normal text-[#888888] text-[16px] leading-relaxed max-w-[828px]">
-            <p className="mb-2">CURRENT VERSION</p>
-            <p className="mb-2">Version 1.0</p>
-            
-            <p className="mt-4 mb-1">What's New:</p>
-            <p className="mb-1">- Initial release</p>
-            <p className="mb-1">- 3-6-9 journaling framework</p>
-            <p className="mb-1">- Premium tracking features</p>
-            <p className="mb-1">- Background music</p>
-            <p>- Daily reminders</p>
+            <p className="mb-2">QUESTIONS ABOUT PRIVACY</p>
+            <p className="mb-2">If you have any questions about this Privacy Policy or our data practices, please contact us:</p>
+            <p className="mt-4 mb-1">Email: support@boldinmagenta.com</p>
+            <p className="mb-1">Response Time: Within 24-48 hours</p>
+            <p className="mt-4">We are committed to addressing your privacy concerns and will respond to your inquiries promptly.</p>
           </div>
         </section>
       </main>
@@ -324,3 +312,4 @@ export default function Manifest369Support() {
     </div>
   );
 }
+
