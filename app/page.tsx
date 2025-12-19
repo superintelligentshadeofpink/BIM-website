@@ -59,13 +59,15 @@ export default function Landing() {
 
           {/* Logo - visible on all screens */}
           <p className="font-darker-grotesque font-semibold text-[28px] sm:text-[24px] self-center">
+            <a href="/">
             <span className="text-white">BOLDIN</span>
             <span className="text-[#ffc9d6]">MAGENTA</span>
+            </a>
           </p>
           
           {/* Desktop Navigation - hidden on mobile */}
           <div className="hidden md:flex items-center gap-[30px] ml-auto">
-            <span className="font-roboto text-[16px] text-white">Support</span>
+            <a href="/support" className="font-roboto text-[16px] text-white">Support</a>
             {/* TODO - Make this image an icon instead 
             <img src={imgEllipse7} alt="" className="w-[4px] h-[4px]" />
             <span className="font-roboto text-[16px] text-white">Download on the app store</span> */}
@@ -111,14 +113,16 @@ export default function Landing() {
 
               {/* Logo in mobile menu */}
               <p className="font-darker-grotesque font-semibold text-[24px] mb-8">
-                <span className="text-black">BOLDIN</span>
-                <span className="text-[#ffc9d6]">MAGENTA</span>
+                <a href="/">
+                  <span className="text-black">BOLDIN</span>
+                  <span className="text-[#ffc9d6]">MAGENTA</span>
+                </a>
               </p>
 
               {/* Navigation Links */}
               <div className="flex flex-col gap-6">
                 <a
-                  href="#"
+                  href="/support"
                   className="font-roboto text-[16px] text-black hover:text-[#ff31d2] transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
