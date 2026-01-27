@@ -142,7 +142,7 @@ export default function PrivacyPolicy() {
             Introduction
           </h2>
           <div className="font-roboto font-normal text-[#888888] text-[16px] leading-relaxed max-w-[828px]">
-            <p className="mb-2">Last Updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+            <p className="mb-2">Last Updated: January 27, 2026</p>
             <p className="mb-2">Boldin Magenta ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use the Manifest369 application (the "App").</p>
             <p className="mt-4">By using the App, you agree to the collection and use of information in accordance with this policy.</p>
           </div>
@@ -166,7 +166,9 @@ export default function PrivacyPolicy() {
             
             <p className="mt-4 mb-1">• Device Information: The App may collect basic device information necessary for functionality, such as device type and operating system version, which is standard for mobile applications.</p>
             
-            <p className="mt-4">• Subscription Information: If you purchase a Premium subscription, payment information is processed through Apple's App Store, and we do not have access to your payment details.</p>
+            <p className="mt-4 mb-1">• Purchase Information: If you purchase the App, payment information is processed through Apple's App Store. We do not have access to your payment details.</p>
+            
+            <p className="mt-4 mb-1">• Advertising Data: With your permission, we collect limited data for advertising attribution through the Meta (Facebook) SDK. This includes device identifiers and app events (such as app launches) to measure the effectiveness of our advertising campaigns. You can control this through the App Tracking Transparency prompt when you first open the App, or in your device's Settings under Privacy & Security → Tracking.</p>
           </div>
         </section>
 
@@ -181,9 +183,9 @@ export default function PrivacyPolicy() {
             
             <p className="mt-4 mb-1">• To track your daily Manifestation completion status</p>
             <p className="mb-1">• To provide you with progress statistics and completion history</p>
-            <p className="mb-1">• To enable Premium features such as tracking and reminders</p>
+            <p className="mb-1">• To enable features such as streak tracking and daily reminders</p>
             <p className="mb-1">• To improve the App's functionality and user experience</p>
-            <p className="mt-4">We do not use your data for advertising, marketing, or any other commercial purposes. We do not sell, rent, or share your data with third parties.</p>
+            <p className="mt-4">We do not sell or rent your personal data. If you grant tracking permission, anonymised advertising data is shared with Meta (Facebook) solely to measure ad campaign performance. We do not share your Manifestation content or personal information with third parties for their marketing purposes.</p>
           </div>
         </section>
 
@@ -228,9 +230,9 @@ export default function PrivacyPolicy() {
             <p className="mb-2">EXTERNAL SERVICES</p>
             <p className="mb-2">The App may use the following third-party services:</p>
             
-            <p className="mt-4 mb-1">• Apple App Store: For processing Premium subscription payments. Apple's privacy policy applies to payment transactions.</p>
+            <p className="mt-4 mb-1">• Apple App Store: For processing App purchases. Apple's privacy policy applies to payment transactions.</p>
             <p className="mb-1">• Apple iCloud: If you enable iCloud backup, your device data may be backed up to iCloud according to Apple's terms and privacy policy.</p>
-            <p className="mt-4">We do not use third-party analytics, advertising networks, or data brokers. We do not share your data with any third parties for marketing or advertising purposes.</p>
+            <p className="mb-1">• Meta (Facebook) SDK: If you grant tracking permission via the App Tracking Transparency prompt, the Meta SDK collects device identifiers and app events to help us measure advertising effectiveness. This data is processed according to Meta's Privacy Policy (https://www.facebook.com/privacy/policy/). If you decline tracking, this data is not collected.</p>
           </div>
         </section>
 
