@@ -67,10 +67,9 @@ export default function Landing() {
           
           {/* Desktop Navigation - hidden on mobile */}
           <div className="hidden md:flex items-center gap-[30px] ml-auto">
-            <a href="/manifest369" className="font-roboto text-[16px] text-white">Support</a>
-            {/* TODO - Make this image an icon instead 
-            <img src={imgEllipse7} alt="" className="w-[4px] h-[4px]" />
-            <span className="font-roboto text-[16px] text-white">Download on the app store</span> */}
+            <a href="/manifest369" className="font-roboto text-[16px] text-white">Manifest369</a>
+            <a href="/profilePerfect" className="font-roboto text-[16px] text-white">ProfilePerfect</a>
+            <a href="/privacy" className="font-roboto text-[16px] text-white">Privacy</a>
           </div>
 
           {/* Mobile Menu Overlay */}
@@ -126,7 +125,21 @@ export default function Landing() {
                   className="font-roboto text-[16px] text-black hover:text-[#ff31d2] transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Support
+                  Manifest369
+                </a>
+                <a
+                  href="/profilePerfect"
+                  className="font-roboto text-[16px] text-black hover:text-[#ff31d2] transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  ProfilePerfect
+                </a>
+                <a
+                  href="/privacy"
+                  className="font-roboto text-[16px] text-black hover:text-[#ff31d2] transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Privacy
                 </a>
               </div>
             </div>
@@ -151,7 +164,7 @@ export default function Landing() {
       <section className="hidden md:block mx-auto w-[1140px] h-[720px]">
 
         {/* Section titles */}
-        <div className="mb-[40px] relative h-[60px]">
+        <div className="mb-[40px] relative h-[60px] mt-[150px]">
           <p className="absolute left-1/2 -translate-x-1/2 top-0 font-codystar text-[40px] text-[#cccccc] capitalize text-center z-10">
             MANIFEST369
           </p>
@@ -292,7 +305,7 @@ export default function Landing() {
             </div>
 
             <p className="font-roboto text-[16px] text-[#888888] leading-[1.7] w-full md:w-[457px] mt-[20px] md:mt-[60px]">
-              Begin your easy and relaxing manifestation process today by downloading the Manifest369 app from the app store. Supercharge your practice with daily tracking and reminder notifications in the premium version.
+              Begin your easy and relaxing manifestation process today by downloading the Manifest369 app from the app store. Get started with a small one-time purchase and enjoy all features including daily tracking and reminder notifications.
             </p>
             
             {/* Download button */}
@@ -305,43 +318,23 @@ export default function Landing() {
             </button> */}
           </div>
 
-          {/* Pricing cards container */}
-          <div className="flex flex-col md:flex-row gap-[40px] md:gap-0 w-full md:w-auto justify-center order-2 md:order-none">
-            {/* Pricing - Basic */}
-            <div className="w-full max-w-[260px] md:w-[260px]">
-              <p className="font-roboto font-medium text-[12px] text-[#ff31d2] tracking-[1.2px] uppercase">basic</p>
-              <p className="font-roboto font-medium text-[32px] text-black mt-[10px]">FREE</p>
-              <div className="w-full max-w-[240px] md:w-[240px] h-[2px] mt-[20px] md:mt-[51px]">
-                <img src="images/purple-underline.png" alt="" className="w-full h-full object-cover" />
-              </div>
-              <div className="flex mt-[20px] md:mt-[30px]">
-                <ul className="font-roboto text-[16px] text-[#888888] leading-[1.7] space-y-[3px] list-disc list-inside marker:text-[#FF31D2]">
-                  <li>3-6-9 guided journaling</li>
-                  <li>Beautiful, dreamy interface</li>
-                  <li className="font-bold">Peaceful background music</li>
-                  <li>Customisable audio settings</li>
-                </ul>
-              </div>
+          {/* Pricing card */}
+          <div className="w-full max-w-[260px] md:w-[260px] order-2 md:order-none">
+            <p className="font-roboto font-medium text-[12px] text-[#ff31d2] tracking-[1.2px] uppercase">manifest369</p>
+            <p className="font-roboto font-medium text-[32px] text-black mt-[10px]">
+              $2<span className="text-[16px]">.99 USD</span>
+            </p>
+            <p className="font-roboto text-[16px] text-[#888888] mt-[10px]">one-time purchase</p>
+            <div className="w-full max-w-[240px] md:w-[240px] h-[2px] mt-[18px]">
+              <img src="images/purple-underline.png" alt="" className="w-full h-full object-cover" />
             </div>
-            
-            {/* Pricing - Premium */}
-            <div className="w-full max-w-[260px] md:w-[260px]">
-              <p className="font-roboto font-medium text-[12px] text-[#ff31d2] tracking-[1.2px] uppercase">premium</p>
-              <p className="font-roboto font-medium text-[32px] text-black mt-[10px]">
-                $4<span className="text-[16px]">.99 USD</span>
-              </p>
-              <p className="font-roboto text-[16px] text-[#888888] mt-[10px]">/per year</p>
-              <div className="w-full max-w-[240px] md:w-[240px] h-[2px] mt-[18px]">
-                <img src="images/purple-underline.png" alt="" className="w-full h-full object-cover" />
-              </div>
-              <div className="flex mt-[20px] md:mt-[30px]">
-                <ul className="font-roboto text-[16px] text-[#888888] leading-[1.7] space-y-[3px] list-disc list-inside marker:text-[#FF31D2]">
-                  <li className="font-bold">Daily completion tracking</li>
-                  <li>Daily Reminder</li>
-                  <li>Session history calendar</li>
-                  <li>Ad-free experience</li>
-                </ul>
-              </div>
+            <div className="flex mt-[20px] md:mt-[30px]">
+              <ul className="font-roboto text-[16px] text-[#888888] leading-[1.7] space-y-[3px] list-disc list-inside marker:text-[#FF31D2]">
+                <li>3-6-9 guided journaling</li>
+                <li className="font-bold">Daily completion tracking</li>
+                <li>Daily Reminder</li>
+                <li>Session history calendar</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -356,7 +349,8 @@ export default function Landing() {
         </p>
         
         <div className="absolute left-1/2 -translate-x-1/2 top-[388px] flex items-center gap-[30px]">
-          <a href="/manifest369" className="font-roboto text-[16px] text-white">Support</a>
+          <a href="/manifest369" className="font-roboto text-[16px] text-white">Manifest369</a>
+          <a href="/profilePerfect" className="font-roboto text-[16px] text-white">ProfilePerfect</a>
           <a href="/privacy" className="font-roboto text-[16px] text-white">Privacy</a>
         </div>
         

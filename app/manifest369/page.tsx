@@ -62,10 +62,9 @@ export default function Manifest369Support() {
           
           {/* Desktop Navigation - hidden on mobile */}
           <div className="hidden md:flex items-center gap-[30px] ml-auto">
-            <a href="/manifest369" className="font-roboto text-[16px] text-white">Support</a>
-            {/* TODO - Make this image an icon instead 
-            <img src={imgEllipse7} alt="" className="w-[4px] h-[4px]" />
-            <span className="font-roboto text-[16px] text-white">Download on the app store</span> */}
+            <a href="/manifest369" className="font-roboto text-[16px] text-white">Manifest369</a>
+            <a href="/profilePerfect" className="font-roboto text-[16px] text-white">ProfilePerfect</a>
+            <a href="/privacy" className="font-roboto text-[16px] text-white">Privacy</a>
           </div>
 
           {/* Mobile Menu Overlay */}
@@ -121,7 +120,21 @@ export default function Manifest369Support() {
                   className="font-roboto text-[16px] text-black hover:text-[#ff31d2] transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Support
+                  Manifest369
+                </a>
+                <a
+                  href="/profilePerfect"
+                  className="font-roboto text-[16px] text-black hover:text-[#ff31d2] transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  ProfilePerfect
+                </a>
+                <a
+                  href="/privacy"
+                  className="font-roboto text-[16px] text-black hover:text-[#ff31d2] transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Privacy
                 </a>
               </div>
             </div>
@@ -172,16 +185,6 @@ export default function Manifest369Support() {
             </div>
             
             <div className="mt-4">
-              <p className="mb-1">Q: Do I need Premium to use the app?</p>
-              <p>A: No. All core journaling features are free. Premium adds tracking, reminders, and removes ads.</p>
-            </div>
-            
-            <div className="mt-4">
-              <p className="mb-1">Q: How do subscriptions work?</p>
-              <p>A: Premium is $4.99 USD/year, billed annually through your iTunes account. Cancel anytime in Settings.</p>
-            </div>
-            
-            <div className="mt-4">
               <p className="mb-1">Q: Will this guarantee my goals come true?</p>
               <p>A: Manifest369 is a journaling tool for focus and consistency. Results depend on your actions and commitment.</p>
             </div>
@@ -189,16 +192,6 @@ export default function Manifest369Support() {
             <div className="mt-4">
               <p className="mb-1">Q: Where is my data stored?</p>
               <p>A: Your journal entries are not stored after entering. Your daily tracking is stored locally on your phone.</p>
-            </div>
-            
-            <div className="mt-4">
-              <p className="mb-1">Q: How do I cancel my subscription?</p>
-              <p>A: Open iPhone Settings → Your Name → Subscriptions → Manifest369 → Cancel Subscription</p>
-            </div>
-            
-            <div className="mt-4">
-              <p className="mb-1">Q: How do I restore my Premium purchase?</p>
-              <p>A: Settings → Go Premium → Restore Previous Purchase</p>
             </div>
           </div>
         </section>
@@ -219,43 +212,11 @@ export default function Manifest369Support() {
             </div>
             
             <div className="mt-4">
-              <p className="mb-1">Ads not loading:</p>
-              <p className="mb-1">- Check internet connection</p>
-              <p className="mb-2">- This is normal behaviour for Premium subscribers</p>
-            </div>
-            
-            <div className="mt-4">
-              <p className="mb-1">Premium features not unlocking:</p>
-              <p className="mb-1">- Tap "Restore Previous Purchase" in subscription screen</p>
-              <p className="mb-2">- Ensure you're signed in with same Apple ID</p>
-            </div>
-            
-            <div className="mt-4">
               <p className="mb-1">App crashes:</p>
               <p className="mb-1">- Update to latest iOS version</p>
               <p className="mb-1">- Reinstall the app</p>
               <p>- Contact support if issue persists</p>
             </div>
-          </div>
-        </section>
-
-        {/* Premium Features */}
-        <section className="mt-20 ml-[34px]">
-          <h2 className="capitalize font-darker-grotesque font-semibold text-[36px] text-black mb-6 leading-none">
-            Premium Features
-          </h2>
-          <div className="font-roboto font-normal text-[#888888] text-[16px] leading-relaxed max-w-[828px]">
-            <p className="mb-2">PREMIUM SUBSCRIPTION</p>
-            
-            <p className="mt-4 mb-1">What's Included:</p>
-            <p className="mb-1">✓ Daily completion tracking</p>
-            <p className="mb-1">✓ Reminder notifications</p>
-            <p className="mb-2">✓ Ad-free experience</p>
-            
-            <p className="mt-4 mb-1">Price: $4.99 USD/year</p>
-            <p className="mb-1">Payment: Charged to iTunes Account</p>
-            <p className="mb-1">Auto-Renewal: Yes, cancel anytime</p>
-            <p>Free Trial: Not currently offered</p>
           </div>
         </section>
 
@@ -297,7 +258,7 @@ export default function Manifest369Support() {
             <p className="mt-4 mb-1">What's New:</p>
             <p className="mb-1">- Initial release</p>
             <p className="mb-1">- 3-6-9 journaling framework</p>
-            <p className="mb-1">- Premium tracking features</p>
+            <p className="mb-1">- Daily tracking features</p>
             <p className="mb-1">- Background music</p>
             <p>- Daily reminders</p>
           </div>
@@ -313,7 +274,8 @@ export default function Manifest369Support() {
         </p>
         
         <div className="absolute left-1/2 -translate-x-1/2 top-[388px] flex items-center gap-[30px]">
-          <a href="/manifest369" className="font-roboto text-[16px] text-white">Support</a>
+          <a href="/manifest369" className="font-roboto text-[16px] text-white">Manifest369</a>
+          <a href="/profilePerfect" className="font-roboto text-[16px] text-white">ProfilePerfect</a>
           <a href="/privacy" className="font-roboto text-[16px] text-white">Privacy</a>
         </div>
         
